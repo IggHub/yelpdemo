@@ -11,6 +11,9 @@ gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'fog-aws'
+gem 'figaro'
+gem "mini_magick"
 
 group :development, :test do
   gem 'sqlite3'
@@ -24,11 +27,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'rails_12factor', group: :production
-
-gem 'pg', group: :production
-
-gem 'fog-aws'
-gem 'figaro'
