@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+#ruby '2.2.2'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
@@ -29,3 +29,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor', group: :production
 
 gem 'pg', group: :production
+
+gem 'fog-aws'
+gem 'figaro'
