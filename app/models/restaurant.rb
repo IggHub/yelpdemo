@@ -3,7 +3,6 @@ class Restaurant < ApplicationRecord
   has_many :reviews
 
   searchkick
-
   validates :name, :address, :phone, :website, :image, presence: true
   validates :phone, format: {with: /\A\(\d{3}\) \d{3}-\d{4}\Z/,
     message: "must follow following format: (xxx) xxx-xxxx"}
